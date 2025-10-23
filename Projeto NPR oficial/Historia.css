@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+/* Estilos gerais do body */
+body {
+  background-color: #00121e;
+  color: white;
+  font-size: 15px;
+}
+
+/* ===========================
+   HEADER + NAV
+=========================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 26px;
+  background-color: #00121e;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+/* Menu padrão */
+.nav {
+  position: relative;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
+  padding: 8px;
+  display: block;
+}
+
+.nav-list li a:hover {
+  color: #51CB20;
+}
+
+/* Seção inicial com imagem do grupo */
+.intro-imagem {
+  height: 126vh;
+  background-image: url('./Imagens/fotogrupo.jpg'); /* sua imagem real */
+  background-size: contain;
+  filter: brightness(0.6); /* diminui o brilho da imagem */
+  background-position: center;
+  background-repeat: no-repeat; /* Evita a repetição da imagem nas bordas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.intro-texto h1 {
+  font-size: 48px;
+  color: #00ff6a;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px black;
+  text-align: center;
+}
+
+/* Seção de conteúdo com fundo 00121e */
+.conteudo-quem-somos {
+  background-color: #00121e;
+  color: white;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title p {
+  color: #00ff6a;
+  text-transform: uppercase;
+  font-size: 29px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 17px;
+  line-height: 1.6;
+}
